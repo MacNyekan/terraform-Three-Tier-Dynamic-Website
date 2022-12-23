@@ -46,3 +46,10 @@ variable "private_data_subnet_az2_cidr" {
   description = "Private data Subnet AZ2 cidr block"
   type        = string
 }
+
+#Security Groups Variable
+variable "ssh_location" {
+  default     = "96.242.56.19/32"
+  description = "SSH into instances"
+  type        = string
+}
