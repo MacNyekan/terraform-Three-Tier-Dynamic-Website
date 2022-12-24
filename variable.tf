@@ -85,3 +85,11 @@ variable "SSL_Certificate_ARN" {
   description = "create standby Database"
   type        = string
 }
+
+#SNS Topic Variable
+#ALB Variables
+variable "operator_email" {
+  default     = "firstnationofficial@gmail.com"
+  description = "a valid email"
+  type        = string
+}
