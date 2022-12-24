@@ -87,9 +87,34 @@ variable "SSL_Certificate_ARN" {
 }
 
 #SNS Topic Variable
-#ALB Variables
 variable "operator_email" {
   default     = "firstnationofficial@gmail.com"
   description = "a valid email"
   type        = string
 }
+
+#ASG Variables
+variable "launch_template_name" {
+  default     = "dev-launch-template"
+  description = "name of launch template"
+  type        = string
+}
+
+variable "ec2_image_id" {
+  default     = "ami-0b5eea76982371e91"
+  description = "ami id"
+  type        = string
+}
+
+variable "ec2_instance_type" {
+  default     = "t2.micro"
+  description = "ec2 instance type"
+  type        = string
+}
+
+variable "ec2_keypair" {
+  default     = "myec2key"
+  description = "name of keypair"
+  type        = string
+}
+
