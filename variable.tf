@@ -56,7 +56,7 @@ variable "ssh_location" {
 
 #RDS Variables
 variable "database_snapshot_identifier" {
-  default     = "arn:aws:rds:us-east-1:654284348956:snapshot:db-snapshot"
+  default     = "arn:aws:rds:us-east-1:654284348956:snapshot:dev-db-snapshot"
   description = "Database snapshot Arn"
   type        = string
 }
