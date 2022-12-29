@@ -118,3 +118,16 @@ variable "ec2_keypair" {
   type        = string
 }
 
+#Route53 Variables
+variable "domain_name" {
+  default     = "project609.com"
+  description = "domain name"
+  type        = string
+}
+
+variable "record_name" {
+  default     = "www"
+  description = "sub domain name"
+  type        = string
+}
+
